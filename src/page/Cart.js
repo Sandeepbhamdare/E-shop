@@ -30,8 +30,8 @@ const Cart = () => {
                         <td className="py-4">Rs. 550</td>
                         <td className="py-4">
                             <div className="d-flex flex-row">
-                                <input className="form-controll text-center" style={{ width: "50px" }} type="number" value={0} readOnly />
-                                <div className="d-flex flex-column">
+                                <input className="text-center border border-secondary border-end-0 rounded-start" style={{ width: "50px" }} type="number" value={0} readOnly />
+                                <div className="d-flex flex-column border border-secondary border-start-0 rounded-end">
                                     <IoIosArrowUp />
                                     <IoIosArrowDown />
                                 </div>
@@ -53,8 +53,8 @@ const Cart = () => {
                         <td className="py-4">Rs. 550</td>
                         <td className="py-4">
                             <div className="d-flex flex-row">
-                                <input className="form-controll text-center" style={{ width: "50px" }} type="number" value={0} readOnly />
-                                <div className="d-flex flex-column">
+                                <input className="text-center border border-secondary border-end-0 rounded-start" style={{ width: "50px" }} type="number" value={0} readOnly />
+                                <div className="d-flex flex-column border border-secondary border-start-0 rounded-end">
                                     <IoIosArrowUp />
                                     <IoIosArrowDown />
                                 </div>
@@ -65,7 +65,7 @@ const Cart = () => {
                             Rs. 550
                         </td>
                         <td className="py-4">
-                            <CiCircleRemove className="fs-3 text-danger" />
+                            <CiCircleRemove className="fs-3 text-danger " />
                         </td>
                     </tr>
                 </tbody>
@@ -75,7 +75,7 @@ const Cart = () => {
                 <button className="btn btn-outline-dark rounded-1">Return To Shop</button>
                 <button className="btn btn-outline-dark rounded-1">Update Cart</button>
             </div>
-            <div className="container my-3 d-flex flex-row justify-content-around">
+            <div className="container my-5 d-flex flex-row justify-content-around">
                 <form className="row g-3">
                     <div className="col-auto">
                         <input type="text" className="form-control border-dark" placeholder="Coupon Code" />
