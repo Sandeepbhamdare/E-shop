@@ -5,12 +5,12 @@ const BillingDetails = () => {
     return (
         <>
             <nav aria-label="breadcrumb" className="container my-5" style={{ fontSize: "15px" }}>
-                <ol className="breadcrumb">
-                    <li className="breadcrumb-item text-secondary"><Link to="/">Home</Link></li>
-                    <li className="breadcrumb-item active text-dark">My Account</li>
-                    <li className="breadcrumb-item active text-dark" >Product</li>
-                    <li className="breadcrumb-item active text-dark" ><Link to="/cart">View Cart</Link></li>
-                    <li className="breadcrumb-item active text-dark" aria-current="page">checkOut</li>
+                <ol className="breadcrumb text-secondary">
+                    <li className="breadcrumb-item"><Link to="/" className="text-secondary">Home</Link></li>
+                    <li className="breadcrumb-item">My Account</li>
+                    <li className="breadcrumb-item" >Product</li>
+                    <li className="breadcrumb-item" ><Link to="/cart" className="text-secondary">View Cart</Link></li>
+                    <li className="breadcrumb-item text-dark" aria-current="page">checkOut</li>
                 </ol>
             </nav>
             <div className=" container d-flex flex-row justify-content-around mb-4">

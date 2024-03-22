@@ -6,9 +6,9 @@ const Cart = () => {
     return (
         <>
             <nav aria-label="breadcrumb" className="container my-3" style={{ fontSize: "15px" }}>
-                <ol className="breadcrumb">
-                    <li className="breadcrumb-item text-secondary"><Link to="/">Home</Link></li>
-                    <li className="breadcrumb-item active text-dark" aria-current="page">Cart</li>
+                <ol className="breadcrumb text-secondary">
+                    <li className="breadcrumb-item "><Link to="/" className="text-secondary">Home</Link></li>
+                    <li className="breadcrumb-item text-dark" aria-current="page">Cart</li>
                 </ol>
             </nav>
             <table className="table table-hover container text-center">
