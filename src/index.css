@@ -1,4 +1,4 @@
-a{
+a {
     text-decoration: none;
     color: black;
 }
@@ -48,7 +48,8 @@ ul {
     display: block;
 }
 
-.viewItem,.deleteWish {
+.viewItem,
+.deleteWish {
     top: 60px;
 }
 
@@ -116,8 +117,8 @@ ul {
     padding: 5px;
 }
 
+
 .extraLinks {
-    display: none;
     position: absolute;
     top: 65px;
     right: 82px;
@@ -131,15 +132,26 @@ ul {
     backdrop-filter: blur(6px);
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
-.billingDetails>li{
+.userlogin:hover .extraLinks{
+    color: #dc3545;
+}
+
+.userInfo {
+    width: 30px;
+    height: 30px;
+}
+
+
+.billingDetails>li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
-    padding-top:5px ;
+    padding-top: 5px;
     font-size: 13px;
 }
-.bankImg>img{
+
+.bankImg>img {
     width: 35px;
     object-fit: contain;
 }

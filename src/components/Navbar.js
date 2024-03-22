@@ -3,7 +3,11 @@ import { CiSearch, CiHeart, CiShoppingCart, CiUser, CiStar, CiLogout } from "rea
 import { IoIosCloseCircleOutline } from "react-icons/io";
 import { PiShoppingBagOpenThin } from "react-icons/pi";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 const Navbar = () => {
+
+    const [accountView, setaccountView] = useState(false)
+
     return (
         <>
             <nav className="navbar navbar-expand-lg bg-light border border-end-0 py-3"  >
@@ -42,14 +46,19 @@ const Navbar = () => {
                                     <CiShoppingCart />
                                 </Link>
                             </li>
-                            <li className=" text-center m-1 fs-5 bg-danger text-light rounded-circle" style={{ width: "30px", height: "30px" }}>
-                                <CiUser />
+                            <li className=" text-center m-1 fs-5 bg-danger text-light rounded-circle userInfo " >
+
+                                <CiUser className="userlogin" onClick={() => setaccountView(!accountView)} />
                             </li>
                         </ul>
                     </div>
 
-                    <ul className="extraLinks">
-                        <li className="py-1"><CiUser /> Manage My Account</li>
+                    <ul className={`${accountView ? "extraLinks" : "extraLinks d-none"}`}>
+                        <li className="py-1">
+                            <Link to="/useraccount" onClick={() => setaccountView(!accountView)}>
+                                <CiUser /> Manage My Account
+                            </Link>
+                        </li>
                         <li className="py-1"><PiShoppingBagOpenThin /> Orders</li>
                         <li className="py-1"><IoIosCloseCircleOutline /> Cancellations</li>
                         <li className="py-1"><CiStar /> Reviews</li>
