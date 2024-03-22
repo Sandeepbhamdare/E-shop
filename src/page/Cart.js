@@ -1,13 +1,14 @@
 import { CiCircleRemove } from "react-icons/ci";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
     return (
         <>
             <nav aria-label="breadcrumb" className="container my-3" style={{ fontSize: "15px" }}>
                 <ol className="breadcrumb">
-                    <li className="breadcrumb-item text-secondary"><a>Home</a></li>
-                    <li className="breadcrumb-item active text-dark" aria-current="page">Library</li>
+                    <li className="breadcrumb-item text-secondary"><Link to="/">Home</Link></li>
+                    <li className="breadcrumb-item active text-dark" aria-current="page">Cart</li>
                 </ol>
             </nav>
             <table className="table table-hover container text-center">
@@ -100,7 +101,7 @@ const Cart = () => {
                             <p>Rs. 1100</p>
                         </li>
                         <li >
-                            <button className="btn btn-danger" style={{ fontSize: "13px", width: "100%" }}>Procees to checkout</button>
+                            <Link className="btn btn-danger" style={{ fontSize: "13px", width: "100%" }} to="/billingdetails">Procees to checkout</Link>
                         </li>
                     </ul>
                 </div>

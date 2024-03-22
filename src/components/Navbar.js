@@ -2,6 +2,7 @@ import "../App.css";
 import { CiSearch, CiHeart, CiShoppingCart, CiUser, CiStar, CiLogout } from "react-icons/ci";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 import { PiShoppingBagOpenThin } from "react-icons/pi";
+import { Link } from "react-router-dom";
 const Navbar = () => {
     return (
         <>
@@ -13,10 +14,11 @@ const Navbar = () => {
                     </button>
                     <div >
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li className="px-3 mx-1">Home</li>
-                            <li className="px-3 mx-1">Contact</li>
-                            <li className="px-3 mx-1">About</li>
-                            <li className="px-3 mx-1">Sign Up</li>
+                            <li className="px-3 mx-1">
+                                <Link to="/">Home</Link></li>
+                            <li className="px-3 mx-1"><Link to="#">Contact</Link></li>
+                            <li className="px-3 mx-1"><Link to="#">About</Link></li>
+                            <li className="px-3 mx-1"><Link to="/signup">Sign Up</Link></li>
                         </ul>
 
                     </div>
@@ -31,10 +33,14 @@ const Navbar = () => {
                                 </div>
                             </li>
                             <li className="px-1 m-1 fs-5 ">
-                                <CiHeart />
+                                <Link to="/wishlist">
+                                    <CiHeart />
+                                </Link>
                             </li>
                             <li className="px-1 m-1 fs-5">
-                                <CiShoppingCart />
+                                <Link to="/cart">
+                                    <CiShoppingCart />
+                                </Link>
                             </li>
                             <li className=" text-center m-1 fs-5 bg-danger text-light rounded-circle" style={{ width: "30px", height: "30px" }}>
                                 <CiUser />

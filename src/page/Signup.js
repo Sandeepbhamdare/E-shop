@@ -1,4 +1,5 @@
 import { FcGoogle } from "react-icons/fc";
+import { Link } from "react-router-dom";
 
 const Signup = () => {
 
@@ -25,7 +26,7 @@ const Signup = () => {
                     <button type="submit" className="btn btn-danger mt-2" style={{ fontSize: "13px" }}>Create Account</button>
                     <button className="btn btn-outline-dark" style={{ fontSize: "13px" }}> <FcGoogle className="fs-5" /> Sign up with Google</button>
 
-                    <p className="text-secondary text-center mt-2" style={{fontSize:"11px"}}>Already have account? <a href="#">Login</a></p>
+                    <p className="text-secondary text-center mt-2" style={{fontSize:"11px"}}>Already have account? <Link to="/login">Login</Link></p>
                 </form>
             </div>
         </>

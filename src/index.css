@@ -1,3 +1,8 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+
 ul {
     list-style: none;
 }
@@ -125,4 +130,16 @@ ul {
     -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(6px);
     border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.billingDetails>li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding-top:5px ;
+    font-size: 13px;
+}
+.bankImg>img{
+    width: 35px;
+    object-fit: contain;
 }

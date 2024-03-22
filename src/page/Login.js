@@ -20,8 +20,8 @@ const Login = () => {
                     <input type="password" className="border-0 border-bottom border-dark p-1" id="confirmpass" placeholder="Confirm Password" />
 
                     <div >
-                        <button type="submit" className="btn btn-danger w-50 me-2">Log In</button>
-                        <p className="d-inline text-danger ms-4" style={{fontSize:"13px"}}>Forgot pasword ?</p>
+                        <button type="submit" className="btn btn-danger w-50 ">Log In</button>
+                        <p className="d-inline text-danger ms-3" style={{fontSize:"13px"}}>Forgot pasword ?</p>
                     </div>
                 </form>
             </div>
