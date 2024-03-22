@@ -8,6 +8,7 @@ import Login from './page/Login';
 import Signup from './page/Signup';
 import Wishlist from './page/Wishlist';
 import BillingDetails from './page/BillingDetails';
+import Account from './page/Account';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/wishlist" element={<Wishlist />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/billingdetails" element={<BillingDetails />} />
+        <Route path="/useraccount" element={<Account />} />
       </Routes>
       <Footer />
     </>

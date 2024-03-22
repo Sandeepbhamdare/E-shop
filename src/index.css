@@ -132,15 +132,11 @@ ul {
     backdrop-filter: blur(6px);
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
-.userlogin:hover .extraLinks{
-    color: #dc3545;
-}
 
 .userInfo {
     width: 30px;
     height: 30px;
 }
-
 
 .billingDetails>li {
     display: flex;
